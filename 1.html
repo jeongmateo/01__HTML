@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style type="text/css">
+      @import url("./style/1.css");
+    </style>
     <title>My Little Guider</title>
     <meta charset="UTF-8">
-    <h1>Mariga Project #1</h1>
-    <a href="1.html"> ▶ HOME</a>
-      <ol>
-        <a href="service keyword.html"
-         title="3 keyword of Service">
-          <li>Three keywords in <strong>Service</strong> side</a></li>
-        <a href="design keyword.html"
-         title="3 keyword of Design">
-          <li>Three keywords in <strong>Design</strong> side</a></li>
-      </ol>
-
+    <h1 class="title">Mariga Project #1</h1>
+    <!--<a href="1.html"> ▶ HOME</a>-->
             <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158682706-1"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158682706-1">
+      
+      </script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -26,52 +22,28 @@
   </head>
 
   <body>
-    <p><h2>My Little Guider</h2>
-       is web service making a guide book.
+    <h2 class="WebName">My Little Guider</h2>
+    <p class="intro">
+       My little guider is web service making a guide book.
+       <br>
        We want to make you memory beautiful travel moments.
     </p>
-    <p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/7sEbw-gwm_0"
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <a href="service keyword.html" title="3 keyword of Service">
+      <button class="servicebtn"><strong>Service</strong> vision</button></a>
+    <a href="design keyword.html" title="3 keyword of Design">
+      <button class="designbtn"><strong>Design</strong> vision</button></a>
+    
+      <p>
+      <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/7sEbw-gwm_0"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
     </p>
-    <img src="travel.jpg" width="75%">
+    <img class="image" src="background.jpg" width="75%">
     <p style="margin-top:10px">
       We will help you to make the guidebook only one for you in the world.
     </p>
-
-    <div id="disqus_thread"></div>
-    <script>
-
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://my-little-guider.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-        <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5e4aa554298c395d1ce85be6/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+    <a href="visitlog.html">
+      <div class="visit_log">Go to visit log</div>
+    </a>
+   
   </body>
 </html>
